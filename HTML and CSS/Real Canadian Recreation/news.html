@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News - Real Canadian Recreation</title>
+        <link href="rcr-style.css" rel="stylesheet" />
+        <link href="news-page.css" rel="stylesheet" />
+    </head>
+    <body id="body" class="noSeason">
+        <div id="test1" class="test left">
+            <button onclick="getSeason()">Now</button><br />
+            <button onclick="changeSeason()">Next</button><br /><br />
+            <button onclick="document.getElementById('main').className = 'main desktop'">Desktop</button><br />
+            <button onclick="document.getElementById('main').className = 'main mobile'">Mobile</button>
+        </div>
+        <div id="main" class="main desktop">
+            <header class="headerContainer">
+                <div class="left decorBar"></div>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div id="nav" class="nav reduced">
+                        <span class="mobile reduced">
+                            <a onclick="document.getElementById('nav').className = 'nav expanded'">+</a>
+                        </span>
+                        <span class="mobile expanded">
+                            <a onclick="document.getElementById('nav').className = 'nav reduced'">-</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="news.html">News</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="events.html">Events</a>
+                        </span>
+                        <span class="expanded">
+                            Adventure
+                        </span>
+                        <span class="expanded">
+                            Camping
+                        </span>
+                        <span class="expanded">
+                            <a href="history.html">History</a>
+                        </span>
+                        <span class="expanded">
+                            Maps
+                        </span>
+                        <span class="expanded">
+                            Contact
+                        </span>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </header>
+            <div class="bodyContainer">
+                <div class="left decorBar"></div>
+                <div class="body">
+                    <div class="title">RCR Weekly News</div>
+                    <div class="newsContainer">
+                        <div class="article" id="article1">
+                            <h1>We Have a New Website!</h1>
+                            <p>Welcome friends and family and strangers alike to our new website! Real Canadian Recreation will be opening in 2020 and this little piece of electronic land is where we will be all of our updates as we progress and prepare for opening! We are growing evermore excited to open our doors next year! Here is a small glimpse as to what’s in store without giving too much away:</p>
+                            <div class="image fright medium"><div class="adventure2"></div></div>
+                            <ul>
+                                <li>On site in Pictou we will have 500 acres of land all carved into beautiful trails and camping sites, event grounds and more!</li>
+                                <li>There will be regularly occurring recreational events for a variety of fun. This includes four wheeler games, target practice, and other things we cannot yet reveal!</li>
+                                <li>We have four wheelers and bikes available to rent so you can journey without your own equipment.</li>
+                                <li>And even more that we will announce at a later date!</li>
+                            </ul>
+                            <p>Now that we’ve explained those few things, we will wait until next time to reveal more! Sorry to keep you waiting! Bye!!</p>
+                            <p>- The Guy</p>
+                        </div>
+                        <div class="article" id="article2">
+                            <h1>Trail Building Progress</h1>
+                            <p>Here is a few picture of us clearing out the trails as we approach opening day…</p>
+                            <div class="image fright large"><div class="adventure1"></div></div>
+                            <div class="image fleft large"><div class="camping6"></div></div>
+                            <div class="image center large"><div class="events6"></div></div>
+                            <p>I hope you are enjoying the progress so far!</p>
+                            <p>See you next time!</p>
+                            <p>- The Guy</p>
+                        </div>
+                        <div class="article" id="article3">
+                            <h1>Opening Day!</h1>
+                            <p>The day we’ve all been waiting for is here~!</p>
+                            <p>Finally, opening day is upon us!</p>
+                            <p>Tomorrow, we will be having our grand opening party, and if you’re reading this, you’re invited! Yes, we are open to the public! Please bring your friends and family and let’s all be merry and have a great time!</p>
+                            <span>The events schedule for opening day is as follows:</span>
+                            <ul>
+                                <li>At 9am breakfast will be served, follow by opening ceremony at 10am! Please come enjoy your morning with us!</li>
+                                <li>The first races will begin at 12pm. Please register by 11am at the track if you are interested in participating.</li>
+                                <li>Guided tours are going on during the races beginning at 12pm, and there will be a crew leaving every hour until 6pm.</li>
+                                <li>Our evening party begins at 6pm where we will have live music and drinks outdoors at the main events grounds!</li>
+                                <li>And <b>during the whole day</b> there will be other games and fun things happening so expect something for everyone!</li>
+                            </ul>
+                            <p>See you tomorrow!</p>
+                            <p>- The Guy</p>
+                        </div>
+                        <div class="article" id="article4">
+                            <h1>Announcement!! Upcoming Events!!!<h1/>
+                            <p>Now that opening day is complete, I would like to share our next week of events!</p>
+                            <p>There are lots of events coming up this week that we are so excited to announce!</p>
+                            <p>Here is our schedule for next week!</p>
+                            <span>[image full width of events schedule (remember to tag the image with a description)]</span>
+                            <p>I hope that you are as excited for everything that is happening as we are!</p>
+                            <p>See you when you get here!</p>
+                            <p>- The Guy</p>
+                            <p>--</p>
+                            <span><a href="#">Have questions? Please contact us!</a></span>
+                        </div>
+                        <div class="article" id="article5">
+                            <h1>This is One Really, Really, Really, Really Long Story<h1/>
+                            <p>There once was a man named Tyson. That man named Tyson was pretty cool. That pretty cool guy has an idea. That idea was to create a recreation area for veterans. He found that veterans were in need of some recreation, and he was right.</p>
+                            <p>Tyson got his act together. Tyson created a business plan and did his research. His research showed him that not only was this of great value to the veterans that would use it, but there are grants for this sort of thing that could help him with his expenses. Helping veterans is a service that keeps giving.</p>
+                            <p>*deep breath* Okay. I can’t keep this up. Time to switch it over to lorem ipsum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus, ex non tincidunt tincidunt, orci dui molestie ex, et vulputate mauris odio sed metus. Quisque pharetra quis turpis vel elementum. Proin tempor erat id pretium blandit. Morbi pellentesque ullamcorper augue, a dictum elit dignissim eu. Proin in consectetur ex, vitae bibendum dolor. Donec ac nulla tempor, dignissim turpis sit amet, imperdiet sapien. Donec enim eros, feugiat non egestas eu, bibendum non nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut lorem ligula, consequat ut rhoncus vitae, euismod non metus. Aenean congue neque lectus, sit amet cursus risus vehicula nec.</p>
+                            <p>Phasellus congue neque enim, ut vehicula mauris interdum sed. Morbi in sodales leo. Donec sodales tortor eu suscipit euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus non lectus sed rhoncus. Suspendisse accumsan neque suscipit malesuada condimentum. Aliquam dapibus tempus euismod. Suspendisse tristique lacus lorem, quis molestie enim consectetur nec.</p>
+                            <p>Sed interdum tellus mi, non condimentum odio porttitor cursus. Suspendisse lobortis sagittis arcu sed cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque tristique turpis turpis, in elementum sapien viverra vel. Suspendisse laoreet erat et ornare cursus. Nullam vitae congue ante. Nam id augue condimentum, porta nulla in, malesuada nisl.</p>
+                            <p>Praesent malesuada erat erat, aliquet ullamcorper nulla gravida in. Maecenas lacinia est leo, et consectetur tortor pulvinar quis. Etiam pharetra odio non mi placerat tempor. Morbi et elementum nulla, ac vulputate magna. Phasellus sed dolor feugiat, tincidunt sem eu, volutpat sem. Cras vitae ultrices elit, varius maximus sapien. In ut varius nisl. Aliquam mollis interdum mi quis elementum. Nunc eget fringilla mi, ut vehicula sem. Aliquam bibendum, lacus finibus ultrices lacinia, erat ligula ultrices magna, vel auctor leo tortor in orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <p>In aliquam, lacus non molestie rutrum, quam metus porta mi, vel pulvinar dui purus eget orci. Mauris pulvinar commodo eros a mattis. Etiam auctor eget libero nec semper. Aliquam non luctus magna. Morbi sit amet felis nisl. Integer sit amet sem quis elit auctor hendrerit quis ac lacus. Vivamus dictum aliquet turpis, eget convallis massa mattis eu. Aenean elementum blandit velit. Nullam elementum convallis tellus eget congue. Ut quis nibh dignissim, cursus felis et, vulputate mauris. Proin a tristique nulla. Curabitur non mi in neque ultricies dignissim. Etiam cursus libero nec bibendum viverra. Vivamus ullamcorper odio orci, vel sagittis justo mollis a. Morbi dapibus, tortor nec mattis congue, massa mi condimentum nibh, et posuere quam nisl a odio. Nulla id consectetur nisl.</p>
+                            <p>Until next time, take care!</p>
+                            <p>- The Guy</p>
+                        </div>
+                        <div class="article" id="article6">
+                            <h1>Check Out Our Pilot Video</h1>
+                            <p>Here is a video that we made to tease what you will see in the future.</p>
+                            <p>Please enjoy!</p>
+                            <iframe src="https://www.youtube.com/embed/L-psLaEBtMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </div>
+            <div class="footerContainer">
+                <div class="decorBar left"></div>
+                <div class="footer">
+                    <div class="companyName">Real Canadian Recreation</div>
+                </div>
+                <div class="decorBar right"></div>
+            </div>
+        </div>
+        <div id="test2" class="test right">
+            <button onclick="document.getElementById('body').className = 'spring'">Spring</button><br />
+            <button onclick="document.getElementById('body').className = 'summer'">Summer</button><br />
+            <button onclick="document.getElementById('body').className = 'autumn'">Autumn</button><br />
+            <button onclick="document.getElementById('body').className = 'winter'">Winter</button><br />
+            <button onclick="document.getElementById('body').className = 'noSeason'">None</button>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="seasonScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,229 @@
+/* main */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12pt;
+    background-color: #a7272d;
+    margin: 0;
+}
+header {
+    text-align: center;
+    color: #a7272d;
+    margin: auto;
+    padding: 1em;
+    font-size: 2em;
+    background-color: white;
+}
+.logo {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.125em;
+    left: -0.125em;
+}
+section {
+    background-color: #a7272d;
+    margin: auto;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: calc(100% - 4em)
+}
+section div {
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.main a {
+    color: inherit;
+    text-decoration: none;
+}
+.main a:hover {
+    text-decoration: underline;
+}
+.main a:active {
+    color: black;
+}
+/* index */
+section button, section input[type="submit"], section input[type="button"] {
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    background-color: white;
+    color: #a7272d;
+    border: 0;
+    font-size: 1.5em;
+}
+section button.clientlist {
+    margin-right: 1em;
+}
+section button:hover {
+    background-color: black;
+    color: white;
+}
+section button:active {
+    background-color: goldenrod;
+    color: white;
+}
+section button+button, section input+input {
+    margin-left: 1em;
+}
+/* client page */
+section .main {
+    background-color: white;
+    padding: 0.75em;
+    width: calc(100% - 1.5em);
+    max-width: 64em;
+}
+.index .main .name {
+    float: left;
+    font-size: 1.5em;
+}
+.index .main .deletebutton {
+    float: right;
+    color: #a7272d;
+    font-size: 1.5em;
+}
+.index .main .editbutton {
+    float: right;
+    color: goldenrod;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+/* client page */
+div.info {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #a7272d;
+    margin: 2em;
+    width: calc(100% - 4em);
+}
+.top {
+    width: calc(100% - 4em);
+    margin: 0em 2em;
+}
+.clientname {
+    font-size: 3em;
+    float: left;
+    position: relative;
+    top: 0.5em
+}
+.clienthistory {
+    background-color: #a7272d;
+    color: white;
+    padding: 0.5em 2em;
+    font-size: 1.5em;
+    float: right;
+}
+.clientpage .main .data {
+    text-align: left;   
+    margin: 2em;
+    width: calc(100% - 4em);
+    padding-bottom: 1em;
+}
+h1 {
+    color: #a7272d;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 0;
+}
+h2 {
+    color: #a7272d;
+    font-weight: 400;
+    margin-top: 2em;
+}
+h2:first-of-type {
+    margin-top: 1em;
+}
+.edit {
+    color: goldenrod;
+    font-size: 1.5em;
+}
+.delete {
+    color: #a7272d;
+    font-size: 1.5em;
+}
+.divider {
+    font-size: 1.5em;
+}
+.floatright {
+    float: right;
+}
+.minimizebar {
+    width: 18em;
+    padding-bottom: 0.25em;
+    border-width: 0;
+    border-bottom-width: 0.125em;
+    border-style: solid;
+    border-color: #a7272d;
+}
+.minimizebar .floatright {
+    color: #a7272d;
+}
+section input.readmore, section .readmore {
+    background-color: #a7272d;
+    color: white;
+}
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    float:inherit;
+}
+.center span {
+    text-align: center;
+}
+td {
+    padding: 0.5em;
+}
+/* client history */
+.clientpage.history .data span {
+    padding-bottom: 1em;
+    display:inline-block;
+}
+/* client assessment */
+.clientpage.assessment h2, h2 {
+    display: inline-block;
+    width: 16em;
+}
+.add {
+    color: deepskyblue;
+}
+.clientpage.assessment .edit {
+    font-size: inherit;
+}
+.clientpage.assessment td:nth-child(1) {
+    width: 16em;
+    color: #a7272d;
+}
+/* assessment add */
+input.rank, input.eqscore {
+    width: 2em;
+}
+input.viascore, input.big5score {
+    width: 3em;
+}
+input.mbtitype {
+    width: 4em;
+}
+input.mbtiscore {
+    width: 6em;
+}
+input.bottom {
+    margin-bottom: 1em;
+}
+.data .delete {
+    font-size: inherit;
+}
+.show .plus {
+    display: none;
+}
+.hide .minus {
+    display: none;
+}
+.hide .preview {
+    display: none;
+}

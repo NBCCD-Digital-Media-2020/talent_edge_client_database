@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Real Canadian Recreation</title>
+        <link href="rcr-style.css" rel="stylesheet" />
+        <link href="events-page.css" rel="stylesheet" />
+    </head>
+    <body id="body" class="noSeason">
+        <div id="test1" class="test left">
+            <button onclick="getSeason()">Now</button><br />
+            <button onclick="changeSeason()">Next</button><br /><br />
+            <button onclick="document.getElementById('main').className = 'main desktop'">Desktop</button><br />
+            <button onclick="document.getElementById('main').className = 'main mobile'">Mobile</button>
+        </div>
+        <div id="main" class="main desktop">
+            <header class="headerContainer">
+                <div class="left decorBar"></div>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div id="nav" class="nav reduced">
+                        <span class="mobile reduced">
+                            <a onclick="document.getElementById('nav').className = 'nav expanded'">+</a>
+                        </span>
+                        <span class="mobile expanded">
+                            <a onclick="document.getElementById('nav').className = 'nav reduced'">-</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="news.html">News</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="events.html">Events</a>
+                        </span>
+                        <span class="expanded">
+                            Adventure
+                        </span>
+                        <span class="expanded">
+                            Camping
+                        </span>
+                        <span class="expanded">
+                            <a href="history.html">History</a>
+                        </span>
+                        <span class="expanded">
+                            Maps
+                        </span>
+                        <span class="expanded">
+                            Contact
+                        </span>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </header>
+            <div class="bodyContainer">
+                <div class="left decorBar"></div>
+                <div class="body">
+                    <div class="title">Events Calendar</div>
+                    <div class="eventsNav">
+                        <span>&#60;&#60;</span>
+                        <span class="month">April 2019</span>
+                        <span>&#62;&#62;</span>
+                    </div>
+                    <table class="eventsCalendar" id="eventsCalendar">
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td class="notThisMonth"></td>
+                            <td><div>1</div></td>
+                            <td><div>2</div></td>
+                            <td><div>3<br />
+                                <a href="#ev1">Spring Campfire</a></div></td>
+                            <td><div>4</div></td>
+                            <td><div>5</div></td>
+                            <td><div>6</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>7</div></td>
+                            <td><div>8</div></td>
+                            <td><div>9<br />
+                                <a href="#ev2">Group Trail Ride</a></div></td>
+                            <td><div>10</div></td>
+                            <td><div>11</div></td>
+                            <td><div>12</div></td>
+                            <td><div>13</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>14</div></td>
+                            <td><div>15</div></td>
+                            <td><div>16</div></td>
+                            <td><div>17</div></td>
+                            <td><div>18</div></td>
+                            <td><div>19</div></td>
+                            <td><div>20</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>21</div></td>
+                            <td><div>22</div></td>
+                            <td><div>23</div></td>
+                            <td><div>24</div></td>
+                            <td><div>25</div></td>
+                            <td><div>26</div></td>
+                            <td><div>27</div></td>
+                        </tr>
+                        <tr>
+                            <td><div>28</div></td>
+                            <td><div>29</div></td>
+                            <td><div>30</div></td>
+                            <td class="notThisMonth"></td>
+                            <td class="notThisMonth"></td>
+                            <td class="notThisMonth"></td>
+                            <td class="notThisMonth"></td>
+                        </tr>
+                    </table>
+                    <div class="title">Upcoming Events</div>
+                    <div class="eventsDescriptions">
+                        <div class="eventsImage" id="ev1">
+                            <div></div>
+                        </div>
+                        <div class="eventsText"><h2>Welcoming Spring Campfire</h2><p>April 3, 2019 at 6pm</p><p>Hey friends! Get your family together for our Spring welcoming celebration! We are planning a barbeque on the beach and hope that you can make it! Please RSVP! </p><p><a href="#">Share</a> - <a href="#">Contact</a></p></div>
+                        <div class="eventsImage" id="ev2">
+                            <div></div>
+                        </div>
+                        <div class="eventsText"><h2>Social Group Trail Ride</h2><p>April 9, 2019 at 1pm</p><p>Interested in a social trail ride? Come out and join us in exploring our newest trail and meet like-minded people! Please RSVP!</p><p><a href="#">Share</a> - <a href="#">Contact</a></p></div>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </div>
+        </div>
+        <div id="test2" class="test right">
+            <button onclick="document.getElementById('body').className = 'spring'">Spring</button><br />
+            <button onclick="document.getElementById('body').className = 'summer'">Summer</button><br />
+            <button onclick="document.getElementById('body').className = 'autumn'">Autumn</button><br />
+            <button onclick="document.getElementById('body').className = 'winter'">Winter</button><br />
+            <button onclick="document.getElementById('body').className = 'noSeason'">None</button>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="seasonScript.js"></script>
+        <script src="date.js"></script>
+        <script src="eventsCalendar.js"></script>
+    </body>
+</html>

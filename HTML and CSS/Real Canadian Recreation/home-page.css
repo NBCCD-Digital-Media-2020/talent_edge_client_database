@@ -1,0 +1,341 @@
+.bodyNavContainer {
+    display: flex;
+    flex-direction: row; 
+    margin-bottom: 0.5rem;
+}
+.bodyNav {
+    position: relative;
+    padding: 0.50rem;
+    border: 0.25rem solid var(--background-color, black);
+    width: 100%;
+    height: 21rem;
+    text-align: center;
+    transition: width 0.32s ease-out, padding 0.24s ease-out, border-width 0.24s ease-out;
+    cursor: pointer;
+}
+.bodyNav + .bodyNav {
+    margin-left: 0.65em;
+}
+.bodyNav span {
+    position: relative;
+    display: inline-block;
+    top: 0.45rem;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    text-shadow: 0em 0em 0.25em var(--background-color, #222), 0em 0em 0.075em var(--background-color, #222);
+    font-family: Alegreya, serif;
+    color: var(--header-text-color, white);
+    transition: font-size 0.32s ease, transform 0.24s ease, top 0.32s ease, letter-spacing 0.32s ease;
+}
+.bodyNav:hover {
+    width: 390%;
+}
+.bodyNav:hover span {
+    font-size: 2.5em;
+    top: 0.03rem;
+    letter-spacing: 0.3125em;
+}
+.bodyNav:active .bg {
+    font-size: 1.2em;
+}
+.bodyNavContainer:hover .bodyNav:not(:hover) span {
+    font-size: 1.1em;
+    top: 0.77rem;
+}
+.bodyNav:active {
+    padding: 0rem;
+    border-width: 0.75rem;
+}
+.bodyNav:active span {
+    transform: translate(0, 0.6rem);
+}
+.bg {
+    position: absolute;
+    background-color: var(--background-color, black);
+    width: 100%;
+    height: 100%;
+    top: 0em;
+    left: 0em;
+    transition: 0.4s ease;
+    --portrait: 26em 39em;
+    --landscape: 39em 26em;
+}
+.adventure .bg#ad1 {
+    background-image: url("/nav-images/adventure1-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide1 45s linear -0.75s infinite;
+}
+.adventure .bg#ad2 {
+    background-image: url("/nav-images/adventure2-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide2 45s linear -0.75s infinite;
+}
+.adventure .bg#ad3 {
+    background-image: url("/nav-images/adventure3-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide3 45s linear -0.75s infinite;
+}
+.adventure .bg#ad4 {
+    background-image: url("/nav-images/adventure4-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% + 0em) calc(50% - 6em);
+    animation: slide4 45s linear -0.75s infinite;
+}
+.adventure .bg#ad5 {
+    background-image: url("/nav-images/adventure5-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide5 45s linear -0.75s infinite;
+}
+.events .bg#ev1 {
+    background-image: url("/nav-images/events1-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 0em) calc(50% + 1em);
+    animation: slide1 45s linear -0.5s infinite;
+}
+.events .bg#ev2 {
+    background-image: url("/nav-images/events2-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 0.5em) calc(50% + 0em);
+    animation: slide2 45s linear -0.5s infinite;
+}
+.events .bg#ev3 {
+    background-image: url("/nav-images/events3-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 0.5em) calc(50% + 0em);
+    animation: slide3 45s linear -0.5s infinite;
+}
+.events .bg#ev4 {
+    background-image: url("/nav-images/events4-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 1em) calc(50% + 2em);
+    animation: slide4 45s linear -0.5s infinite;
+}
+.events .bg#ev5 {
+    background-image: url("/nav-images/events5-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 3em) calc(50% + 0.25em);
+    animation: slide5 45s linear -0.5s infinite;
+}
+.camping .bg#ca1 {
+    background-image: url("/nav-images/camping1-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 4em) calc(50% + 2em);
+    animation: slide1 45s linear -0.25s infinite;
+}
+.camping .bg#ca2 {
+    background-image: url("/nav-images/camping2-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide2 45s linear -0.25s infinite;
+}
+.camping .bg#ca3 {
+    background-image: url("/nav-images/camping3-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% + 6em) calc(50% + 2em);
+    animation: slide3 45s linear -0.25s infinite;
+}
+.camping .bg#ca4 {
+    background-image: url("/nav-images/camping4-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% + 1em) calc(50% - 7em);
+    animation: slide4 45s linear -0.25s infinite;
+}
+.camping .bg#ca5 {
+    background-image: url("/nav-images/camping5-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 4em) calc(50% + 1em);
+    animation: slide5 45s linear -0.25s infinite;
+}
+.history .bg#hi1 {
+    background-image: url("/nav-images/history1-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0em) calc(50% - 0.5em);
+    animation: slide1 45s linear 0s infinite;
+}
+.history .bg#hi2 {
+    background-image: url("/nav-images/history2-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% - 0em) calc(50% - 0em);
+    animation: slide2 45s linear 0s infinite;
+}
+.history .bg#hi3 {
+    background-image: url("/nav-images/history3-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0.5em) calc(50% - 0em);
+    animation: slide3 45s linear 0s infinite;
+}
+.history .bg#hi4 {
+    background-image: url("/nav-images/history4-medium.jpg");
+    background-size: var(--landscape);
+    background-position: calc(50% - 0em) calc(50% + 2em);
+    animation: slide4 45s linear 0s infinite;
+}
+.history .bg#hi5 {
+    background-image: url("/nav-images/history5-medium.jpg");
+    background-size: var(--portrait);
+    background-position: calc(50% - 0em) calc(50% - 2em);
+    animation: slide5 45s linear 0s infinite;
+}
+@keyframes slide1 {
+    from {opacity: 1}
+    20% {opacity: 1}
+    22% {opacity: 0}
+    96% {opacity: 0}
+    98% {opacity: 1}
+    to {opacity: 1}
+}
+@keyframes slide2 {
+    from {opacity: 0}
+    18% {opacity: 0}
+    20% {opacity: 1}
+    40% {opacity: 1}
+    42% {opacity: 0}
+    to {opacity: 0}
+}
+@keyframes slide3 {
+    from {opacity: 0}
+    38% {opacity: 0}
+    40% {opacity: 1}
+    60% {opacity: 1}
+    62% {opacity: 0}
+    to {opacity: 0}
+}
+@keyframes slide4 {
+    from {opacity: 0}
+    58% {opacity: 0}
+    60% {opacity: 1}
+    80% {opacity: 1}
+    82% {opacity: 0}
+    to {opacity: 0}
+}
+@keyframes slide5 {
+    from {opacity: 0}
+    78% {opacity: 0}
+    80% {opacity: 1}
+    98% {opacity: 1}
+    to {opacity: 0}
+}
+
+.newsPreviewContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    font-family: Merriweather, serif;
+    padding-bottom: 0.5rem;
+}
+.newsTitles {
+    width: 19rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+}
+.newsTitles .previewTitle {
+    position: relative;
+}
+.newsTitles .previewTitle span {
+    display: block;
+    margin: 0.5rem 0rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.25s;
+}
+.newsTitles .previewTitle span * {
+    display: none;
+}
+.newsTitles .previewTitle span h1 {
+    display: initial;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.newsTitles .previewTitle:hover span {
+    opacity: 1;
+}
+.newsTitles .highlight {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1em;
+    left: 0em;
+    z-index: -1;
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-color: var(--body-background-color-50);
+    transition: 0.25s;
+}
+.newsTitles .selected {
+    margin: 0.5em 0em;
+}
+.newsTitles .selected span {
+    font-style: italic;
+    padding: 0.5rem;
+    opacity: 1;
+    font-weight: 900;
+}
+.newsTitles .selected span h1 {
+    font-weight: 900;
+}
+.newsTitles .selected .highlight {
+    margin: 1rem 0rem;
+    opacity: 1;
+}
+.newsTitles .more a {
+    font-size: 1.2rem;
+    opacity: 1;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    top: 0.5em;
+}
+.newsTitles .more a:hover {
+    text-decoration: underline;
+}
+.newsPreview {
+    font-size: 1.25em;
+    width: 38rem;
+    float: right;
+    height: 39rem;
+    padding: 1rem;
+    background-color: var(--body-background-color-50);
+    border-radius: 1rem;
+    font-weight: 300;
+}
+.newsPreview .top {
+    height: 36rem;
+    margin-bottom: 1rem;
+}
+.newsPreview .bottom {
+    height: 3rem;
+    text-align: right;
+}
+.newsPreview .bottom a {
+    padding: 0rem;
+    color: inherit;
+}
+.newsPreview .bottom a:active {
+    color: black;
+}
+.newsPreview p {
+    font-style: italic;
+    line-height: 1.1;
+}
+.newsPreview .top {
+    overflow: hidden;
+}
+.newsPreview .top h1 {
+    display: none;
+}
+.newsPreview .top p {
+    display: block;
+}

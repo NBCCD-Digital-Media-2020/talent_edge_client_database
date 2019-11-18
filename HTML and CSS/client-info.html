@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Talent Edge - Jane Doe Info</title>
+        <link href="main-style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <body class="clientpage">
+        <header>
+            <img class="logo" src="logo.png">
+            <span>Talent Edge Client Database</span>
+        </header>
+        <section>
+            <div><button onclick="window.location.href='index.html'">Client List</button>
+            <button onclick="window.location.href='client-info-add.html'">Add a Client</button></div><br>
+            <div class="main">
+                <div class="top"><span class="clientname">Jane Doe</span>
+                <button class="clienthistory" onclick="window.location.href='client-history.html'">Client history</button></div><br>
+                <div class="info">
+                    <h1>Client Profile</h1><br>
+                    <div class="center"><span class="edit"><a href="client-info-edit.html">Edit</a></span><span class="divider"> | </span><span class="delete"><a href="client-info-delete.html">Delete</a></span></div><br>
+                    <div class="data">
+                        <h2>Client Info</h2>
+                        <table>
+                            <tr>
+                                <td>First Name</td>
+                                <td>Jane</td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td>Doe</td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td>12/34/1994</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>Jane@doe.com</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Phone</td>
+                                <td>506-666-7777</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary Phone</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>123 Something Lane</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>Fredericton</td>
+                            </tr>
+                            <tr>
+                                <td>Province / State</td>
+                                <td>NB</td>
+                            </tr>
+                            <tr>
+                                <td>Zip Code</td>
+                                <td>A1A 2B2</td>
+                            </tr>
+                        </table>
+                        <h2>Latest Assessment</h2><br>
+                        <div id="viapreview" class="show"><div class="minimizebar"><span>Strength Assessment</span>
+                        <span class="floatright plus">
+                            <a onclick="document.getElementById('viapreview').className = 'show'">+</a>
+                        </span>
+                        <span class="floatright minus">
+                            <a onclick="document.getElementById('viapreview').className = 'hide'">-</a>
+                        </span>
+                        </div><br>
+                        <table class="preview">
+                            <tr>
+                                <td></td>
+                                <td>Score</td>
+                                <td>Rank</td>
+                            </tr>
+                            <tr>
+                                <td>Courage</td>
+                                <td>23</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Honesty</td>
+                                <td>23</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Perserverence</td>
+                                <td>23</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Zest</td>
+                                <td>23</td>
+                                <td>11</td>
+                            </tr>
+                        </table></div><br>
+                        <div class="minimizebar"><span>MBTI</span><span class="floatright">+</span></div><br>
+                        <div class="minimizebar"><span>BIG 5</span><span class="floatright">+</span></div><br>
+                        <div class="minimizebar"><span>EQ</span><span class="floatright">+</span></div><br>
+                        <button class="readmore" onclick="window.location.href='client-assessment.html'">read more</button><br>
+                        <h2>Coaching Plan</h2>
+                        <table>
+                            <tr>
+                                <td>Coach</td>
+                                <td>Marshall Brown</td>
+                            </tr>
+                            <tr>
+                                <td>Goal</td>
+                                <td>Get a job</td>
+                            </tr>
+                            <tr>
+                                <td>Outcome</td>
+                                <td>Ongoing</td>
+                            </tr>
+                            <tr>
+                                <td>Timeframe</td>
+                                <td>90 days</td>
+                            </tr>
+                            <tr>
+                                <td>Coaching Block</td>
+                                <td>Intro Pack</td>
+                            </tr>
+                        </table><br>
+                        <button class="readmore" onclick="window.location.href='coaching-plan.html'">read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

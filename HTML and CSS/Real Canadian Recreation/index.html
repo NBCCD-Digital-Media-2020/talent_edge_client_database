@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Real Canadian Recreation</title>
+        <link href="rcr-style.css" rel="stylesheet" />
+        <link href="home-page.css" rel="stylesheet" />
+    </head>
+    <body id="body" class="noSeason">
+        <div id="test1" class="test left">
+            <button onclick="getSeason()">Now</button><br />
+            <button onclick="changeSeason()">Next</button><br /><br />
+            <button onclick="document.getElementById('main').className = 'main desktop'">Desktop</button><br />
+            <button onclick="document.getElementById('main').className = 'main mobile'">Mobile</button>
+        </div>
+        <div id="main" class="main desktop">
+            <header class="headerContainer">
+                <div class="left decorBar"></div>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div id="nav" class="nav reduced">
+                        <span class="mobile reduced">
+                            <a onclick="document.getElementById('nav').className = 'nav expanded'">+</a>
+                        </span>
+                        <span class="mobile expanded">
+                            <a onclick="document.getElementById('nav').className = 'nav reduced'">-</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="news.html">News</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="events.html">Events</a>
+                        </span>
+                        <span class="expanded">
+                            Adventure
+                        </span>
+                        <span class="expanded">
+                            Camping
+                        </span>
+                        <span class="expanded">
+                            <a href="history.html">History</a>
+                        </span>
+                        <span class="expanded">
+                            Maps
+                        </span>
+                        <span class="expanded">
+                            Contact
+                        </span>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </header>
+            <div class="bodyContainer">
+                <div class="left decorBar"></div>
+                <div class="body">
+                    <div class="bodyNavContainer">
+                        <div class="bodyNav adventure">
+                            <div class="bg" id="ad1"></div>
+                            <div class="bg" id="ad2"></div>
+                            <div class="bg" id="ad3"></div>
+                            <div class="bg" id="ad4"></div>
+                            <div class="bg" id="ad5"></div>
+                            <span>Adventure</span>
+                        </div>
+                        <div class="bodyNav events">
+                            <a href="events.html">
+                                <div class="bg" id="ev1"></div>
+                                <div class="bg" id="ev2"></div>
+                                <div class="bg" id="ev3"></div>
+                                <div class="bg" id="ev4"></div>
+                                <div class="bg" id="ev5"></div>
+                                <span>Events</span>
+                            </a>
+                        </div>
+                        <div class="bodyNav camping">
+                            <div class="bg" id="ca1"></div>
+                            <div class="bg" id="ca2"></div>
+                            <div class="bg" id="ca3"></div>
+                            <div class="bg" id="ca4"></div>
+                            <div class="bg" id="ca5"></div>
+                            <span>Camping</span>
+                        </div>
+                        <div class="bodyNav history">
+                            <a href="history.html">
+                                <div class="bg" id="hi1"></div>
+                                <div class="bg" id="hi2"></div>
+                                <div class="bg" id="hi3"></div>
+                                <div class="bg" id="hi4"></div>
+                                <div class="bg" id="hi5"></div>
+                                <span>History</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="title">Latest Posts</div>
+                    <div class="newsPreviewContainer">
+                        <div class="newsTitles">
+                            <div class="previewTitle" id="pv1" onclick="activeArticle(1)">
+                                <div class="highlight"></div>
+                                <span><h1>We Have a New Website!</h1></span>
+                            </div>
+                            <div class="previewTitle" onclick="activeArticle(2)" id="pv2">
+                                <div class="highlight"></div>
+                                <span><h1>Trail Building Progress</h1></span>
+                            </div>
+                            <div class="previewTitle" id="pv3" onclick="activeArticle(3)">
+                                <div class="highlight"></div>
+                                <span><h1>Opening Day!</h1></span>
+                            </div>
+                            <div class="previewTitle" id="pv4" onclick="activeArticle(4)">
+                                <div class="highlight"></div>
+                                <span><h1>Announcement!! Upcoming Events!!!</h1></span>
+                            </div>
+                            <div class="previewTitle" id="pv5" onclick="activeArticle(5)">
+                                <div class="highlight"></div>
+                                <span><h1>This is One Really, Really, Really, Really Long Story</h1></span>
+                            </div>
+                            <span class="previewTitle">
+                                <div class="more">
+                                    <a href="news.html">more posts</a>
+                                </div>
+                            </span>
+                        </div>
+                        <div class="newsPreview">
+                            <div id="preview" class="top"><p>Welcome friends and family and strangers alike to our new website! Real Canadian Recreation will be opening in 2020 and this little piece of electronic land is where we will be all of our updates as we progress and prepare for opening! We are growing evermore excited to open our doors next year! Here is a small glimpse as to what’s in store without giving too much away:</p>
+                            <div class="image fright medium"><div class="adventure2"></div></div>
+                            <ul>
+                                <li>On site in Pictou we will have 500 acres of land all carved into beautiful trails and camping sites, event grounds and more!</li>
+                                <li>There will be regularly occurring recreational events for a variety of fun. This includes four wheeler games, target practice, and other things we cannot yet reveal!</li>
+                                <li>We have four wheelers and bikes available to rent so you can journey without your own equipment.</li>
+                                <li>And even more that we will announce at a later date!</li>
+                            </ul>
+                            <p>Now that we’ve explained those few things, we will wait until next time to reveal more! Sorry to keep you waiting! Bye!!</p>
+                            <p>- The Guy</p>
+                            </div>
+                            <div class="bottom">
+                                <a id="previewLink" href="#">View the full article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomButton">
+                        <button>Have questions?<br />Contact us!</button>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </div>
+        </div>
+        <div id="test2" class="test right">
+            <button onclick="document.getElementById('body').className = 'spring'">Spring</button><br />
+            <button onclick="document.getElementById('body').className = 'summer'">Summer</button><br />
+            <button onclick="document.getElementById('body').className = 'autumn'">Autumn</button><br />
+            <button onclick="document.getElementById('body').className = 'winter'">Winter</button><br />
+            <button onclick="document.getElementById('body').className = 'noSeason'">None</button>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="seasonScript.js"></script>
+        <script src="newsPreviewScript.js"></script>
+    </body>
+</html>

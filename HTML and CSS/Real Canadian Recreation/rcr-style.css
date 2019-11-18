@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400i,700i,900i|Montserrat:300i,400,500i,900|Alegreya:900i');
+
+/* SEASONS */
+.spring {
+    --background-color: #2d2733;
+    --background-color-33: #2d273355;
+    --background-color-66: #2d2733aa;
+    --header-background-color: #507c22;
+    --header-background-color-80: #507c22cc;
+    --header-background-color-40: #507c2266;
+    --header-text-color: #f2f3c3;
+    --body-background-color: #e2f1eb;
+    --body-background-color-80: #e2f1ebcc;
+    --body-background-color-50: #e2f1eb80;
+    --body-background-color-40: #e2f1eb66;
+    --body-text-color: #111a62;
+    --background-image: url('background-images/spring-medium.jpg');
+    --logo: url('logos/spring.svg');
+}
+.summer {
+    --background-color: #50261e;
+    --background-color-33: #50261e55;
+    --background-color-66: #50261eaa;
+    --header-background-color: #e86137;
+    --header-background-color-80: #e86137cc;
+    --header-background-color-40: #e8613766;
+    --header-text-color: #fff2c4;
+    --body-background-color: #fde49f;
+    --body-background-color-80: #fde49fcc;
+    --body-background-color-50: #fde49f80;
+    --body-background-color-40: #fde49f66;
+    --body-text-color: #174276;
+    --background-image: url('background-images/summer-medium.jpg');
+    --logo: url('logos/summer.svg');
+}
+.autumn {
+    --background-color: #2e2e13;
+    --background-color-33: #2e2e1355;
+    --background-color-66: #2e2e13aa;
+    --header-background-color: #d56f2d;
+    --header-background-color-80: #d56f2dcc;
+    --header-background-color-40: #d56f2d66;
+    --header-text-color: #ffe5ae;
+    --body-background-color: #f4dea0;
+    --body-background-color-80: #f4dea0cc;
+    --body-background-color-50: #f4dea080;
+    --body-background-color-40: #f4dea066;
+    --body-text-color: #652615;
+    --background-image: url('background-images/autumn-medium.jpg');
+    --logo: url('logos/autumn.svg');
+}
+.winter {
+    --background-color: #1a3033;
+    --background-color-33: #1a303355;
+    --background-color-66: #1a3033aa;
+    --header-background-color: #37afcb;
+    --header-background-color-80: #37afcbcc;
+    --header-background-color-40: #37afcb66;
+    --header-text-color: #cefff9;
+    --body-background-color: #deece6;
+    --body-background-color-80: #deece6cc;
+    --body-background-color-50: #deece680;
+    --body-background-color-40: #deece666;
+    --body-text-color: #1b3918;
+    --background-image: url('background-images/winter-medium.jpg');
+    --logo: url('logos/winter.svg');
+}
+
+/* MAIN */
+@media screen and (max-width: 1920px) {
+    :root {
+        font-size: 12pt;
+    }
+    body {
+        font-size: 14pt;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    :root {
+        font-size: 18pt;
+    }
+    body {
+        font-size: 21pt;
+    }
+}
+
+@media screen and (min-width: 2401px) {
+    :root {
+        font-size: 24pt;
+    }
+    body {
+        font-size: 28pt;
+    }
+}
+
+body {
+    font-family: Merriweather, sans-serif;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headerContainer, .bodyContainer, .footerContainer {
+    display: flex;
+}
+.decorBar {
+    width: 1.25em;
+}
+.mobile .decorBar {
+    display: none;
+}
+.mobile {
+    align-items: stretch;
+    justify-content: stretch;
+}
+a {
+    color: inherit;
+}
+
+/* HEADER */
+.header {
+    width: 60rem;
+    height: 100%;
+    padding: 1em;
+    margin: 0em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--header-text-color);
+    background: var(--header-background-color-80);
+}
+.headerContainer .decorBar {
+    background: var(--header-background-color-40);
+}
+.mobile .header {
+    width: 100%;
+}
+.mobile .logo {
+    align-self: flex-start;
+}
+.logo {
+    height: 6.9em;
+    width: 16.9em;
+    background-size: contain;
+    background-image: var(--logo, url('logos/original.svg'));
+}
+.nav {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Merriweather, serif;
+    font-weight: 900;
+    font-style: italic;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 20em;
+    font-size: 1.8rem;
+}
+.nav span {
+    padding: 0.125em 0.25em;
+    display: initial;
+    cursor: pointer;
+}
+.nav a {
+    color: inherit;
+}
+.nav span:hover {
+    background-color: #c1c1c1;
+    background-color: var(--background-color-33, #45454555);
+}
+.nav span:active {
+    background-color: #838383;
+    background-color: var(--background-color-66, #454545aa);
+}
+.desktop .nav span {
+    display: initial;
+}
+.desktop span.mobile {
+    display: none;
+}
+.mobile .nav {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 7.5em;
+}
+.mobile .expanded span.reduced {
+    display: none;
+}
+.mobile .reduced span.expanded {
+    display: none;
+}
+
+/* BODY */
+.body {
+    width: 60rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    color: var(--body-text-color);
+    background: var(--body-background-color-80);
+}
+.bodyContainer .decorBar {
+    background: var(--body-background-color-40);
+}
+.mobile .body {
+    width: 100%;
+}
+.title {
+    font-family: Merriweather;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+    align-self: center;
+    width: 30rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.1rem;
+    line-height: 100%;
+    border-bottom: 0.2rem solid;
+    border-color: var(--body-text-color);
+    margin-bottom: 1rem;
+}
+.bottomButton {
+    margin: 1rem 18rem;
+}
+.bottomButton button {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--header-text-color, white);
+    background-color: var(--body-text-color, black);
+    padding: 0.4rem 0.4rem 0.5rem 0.4rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: 0.2rem solid var(--header-text-color);
+    cursor: pointer;
+}
+.bottomButton button:active {
+    
+}
+h2 {
+    font-weight: 900;
+}
+/* FOOTER */
+.footer {
+    background-color: #393939;
+    color: #f8f8f8;
+    padding: 1em;
+    display: flex;
+    margin: 0em;
+    width: 60rem;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .companyName {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.footerContainer .decorBar {
+    background-color: #39393980;
+}
+
+/* DEBUG FEATURES */
+.test {
+    padding: 0.5em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.test:hover {
+    opacity: 1;
+}
+.test.left {
+    text-align: left;
+    left: 0;
+}
+.test.right {
+    text-align: right;
+    right: 0;
+}
+.test button {
+    font-family: Merriweather, serif;
+    background-color: var(--background-color-66);
+    color: var(--header-text-color);
+    border: none;
+    padding: 0.25em 0.5em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.test button:active {
+    background-color: var(--background-color);
+    color: white;
+}

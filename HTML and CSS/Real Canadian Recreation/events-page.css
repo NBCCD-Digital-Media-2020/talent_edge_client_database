@@ -1,0 +1,86 @@
+.eventsNav {
+    margin: 1em;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center
+}
+.eventsNav span {
+    display: block;
+}
+.eventsNav :nth-of-type(2) {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+.eventsCalendar {
+    width: 100%;
+    border-spacing: 0.125em;
+    margin-bottom: 2em;
+}
+.eventsCalendar tr {
+    width: 100%;
+}
+.eventsCaledar tr.hidden {
+    display: none;
+}
+.eventsCalendar th {
+    height: 2em;
+    width: calc(100% / 7);
+    background-color: var(--background-color-66);
+    color: var(--header-text-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.125em;
+    border-color: var(--background-color-66);
+}
+.eventsCalendar td div {
+    height: 100%;
+    padding: 0.2em 0.4em;
+}
+.eventsCalendar .notThisMonth {
+    opacity: 0.5;
+}
+.eventsCalendar td {
+    height: 6em;
+    font-size: inherit;
+    width: calc(100% / 7);
+    background-color: var(--body-background-color-50);
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.125em;
+    border-color: var(--body-background-color-80);
+}
+.eventsImage {
+    position: relative;
+    width: 14em;
+    height: 14em;
+    margin: 1em;
+    float: left;
+}
+.eventsImage div {
+    position: absolute;
+    background-color: var(--background-color, black);
+    width: 100%;
+    height: 100%;
+    top: 0em;
+    left: 0em;
+    border-radius: 1em;
+}
+.eventsImage:nth-of-type(1) div {
+    background-image: url("nav-images/camping7-medium.jpg");
+    background-size: 30em 20em;
+    background-position: calc(50% + 0.5em) calc(50% - 0.75em);
+}
+.eventsImage:nth-of-type(3) div {
+    background-image: url("nav-images/adventure6-medium.jpg");
+    background-size: 30em 20em;
+    background-position: calc(50% + 0em) calc(50% - 0em);
+}
+.eventsText {
+    height: 15em;
+    margin: 0em 1em;
+}

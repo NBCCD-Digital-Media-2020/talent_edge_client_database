@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History - Real Canadian Recreation</title>
+        <link href="rcr-style.css" rel="stylesheet" />
+        <link href="history-page.css" rel="stylesheet" />
+    </head>
+    <body id="body" class="noSeason">
+        <div id="test1" class="test left">
+            <button onclick="getSeason()">Now</button><br />
+            <button onclick="changeSeason()">Next</button><br /><br />
+            <button onclick="document.getElementById('main').className = 'main desktop'">Desktop</button><br />
+            <button onclick="document.getElementById('main').className = 'main mobile'">Mobile</button>
+        </div>
+        <div id="main" class="main desktop">
+            <header class="headerContainer">
+                <div class="left decorBar"></div>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div id="nav" class="nav reduced">
+                        <span class="mobile reduced">
+                            <a onclick="document.getElementById('nav').className = 'nav expanded'">+</a>
+                        </span>
+                        <span class="mobile expanded">
+                            <a onclick="document.getElementById('nav').className = 'nav reduced'">-</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="news.html">News</a>
+                        </span>
+                        <span class="expanded">
+                            <a href="events.html">Events</a>
+                        </span>
+                        <span class="expanded">
+                            Adventure
+                        </span>
+                        <span class="expanded">
+                            Camping
+                        </span>
+                        <span class="expanded">
+                            <a href="history.html">History</a>
+                        </span>
+                        <span class="expanded">
+                            Maps
+                        </span>
+                        <span class="expanded">
+                            Contact
+                        </span>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </header>
+            <div class="bodyContainer">
+                <div class="left decorBar"></div>
+                <div class="body">
+                    <div class="title">Our Roots</div>
+                    <div class="history">
+                        <div class="historyLogos">
+                            <img src="images/ogrcr.png" />
+                            <span>Original RCR Logo</span><br />
+                            <img src="images/newrcr.png" />
+                            <span>Our Logo</span>
+                        </div>
+                        <p>This is a page to elaborate on the history of Real Canadian Recreation and how we got here. The two images on the left are the logo for the Royal Canadian Regiment which inspired the name of the company as well as the logo, and underneath that is the logo for this company.</p>
+                        <p>The owner of Real Canadian Recreation, Tyson Bowen, will be the one to write up the history on the official release of this website. However, because I can't speak to the history of the organization, for the purposes of showing off this website in it's current form, I guess I will speak to the history of this website and how it came to be.</p>
+                        <p>Tyson and I met in the Spring of 2018. We decided to start working together as he had faith in my abilities and I had faith in his business plan. Over the course of the past year, I had worked on the plans for our website, and worked of drafts and logos. Initially, I thought the timeline for this website would be much shorter and I would outsource the coding to some friends that I work with, but in the end, I had more time to learn to code it myself, and so I did.</p>
+                    </div>
+                </div>
+                <div class="right decorBar"></div>
+            </div>
+        </div>
+        <div id="test2" class="test right">
+            <button onclick="document.getElementById('body').className = 'spring'">Spring</button><br />
+            <button onclick="document.getElementById('body').className = 'summer'">Summer</button><br />
+            <button onclick="document.getElementById('body').className = 'autumn'">Autumn</button><br />
+            <button onclick="document.getElementById('body').className = 'winter'">Winter</button><br />
+            <button onclick="document.getElementById('body').className = 'noSeason'">None</button>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="seasonScript.js"></script>
+    </body>
+</html>

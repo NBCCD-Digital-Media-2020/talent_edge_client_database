@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Client</title>
+        <link href="main-style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <body class="clientpage">
+        <header>
+            <img class="logo" src="logo.png">
+            <span>Talent Edge Client Database</span>
+        </header>
+        <section>
+            <div><button onclick="window.location.href='index.html'">Client List</button>
+            <button onclick="window.location.href='add-client-info.html'">Add a Client</button></div><br>
+            <div class="main">
+                <div class="top"><span class="clientname">Jane Doe</span>
+                <button class="clienthistory">Client history</button></div><br>
+                <div class="info">
+                    <h1>Edit Client</h1><br>
+                    <div class="data">
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>First Name</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Primary Phone</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Secondary Phone</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Province / State</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Zip Code</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="Add" class="readmore bottom">
+                            <input type="button" value="Cancel" onclick="window.location.href='client-info.html'" class="readmore bottom">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+.newsContainer {
+    padding: 0em 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+.newsContainer .article {
+    padding: 0em 0.5em 0.5em 0.5em;
+    margin: 1em 0em 3em 0em;
+}
+.newsContainer h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5em 0 1em 0;
+}
+.newsContainer p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0.75em 0;
+}
+.newsContainer li {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.newsContainer ul {
+    margin-bottom: 2em;
+}
+.newsContainer a {
+    font-weight: 400;
+    text-decoration: underline;
+}
+.newsContainer iframe {
+    width: calc(100% - 2em);
+    height: 31.2rem;
+    padding: 0em 1em;
+}
+.newsContainer .image {
+    position: relative;
+}
+.newsContainer .image div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -0.5em;
+    left: 0em;
+}
+.newsContainer .medium {
+    height: 12em;
+    width: 12em;
+}
+.newsContainer .large {
+    height: 15em;
+    width: 15em;
+}
+.newsContainer .fright {
+    float: right;
+}
+.newsContainer .fleft {
+    float: left;
+}
+.newsContainer .center {
+    margin: auto;
+}
+.newsContainer .adventure2 {
+    background-image: url("nav-images/adventure2-medium.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.newsContainer .adventure1 {
+    background-image: url("nav-images/adventure1-medium.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.newsContainer .camping6 {
+    background-image: url("nav-images/camping6-medium.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.newsContainer .events6 {
+    background-image: url("nav-images/events6-medium.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}

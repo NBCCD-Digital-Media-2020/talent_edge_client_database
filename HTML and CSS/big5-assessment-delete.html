@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Client</title>
+        <link href="main-style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <body class="clientpage">
+        <header>
+            <img class="logo" src="logo.png">
+            <span>Talent Edge Client Database</span>
+        </header>
+        <section>
+            <div><button onclick="window.location.href='index.html'">Client List</button>
+            <button onclick="window.location.href='clientinfo.html'">Add Client</button></div><br>
+            <div class="main">
+                <div class="top"><span class="clientname">Jane Doe</span>
+                <button class="clienthistory" onclick="window.location.href='client-assessment.html'">&lt;- Back to assessments</button></div><br>
+                <div class="info">
+                    <h1>Delete Big 5 Assessment</h1><br>
+                    <div class="center"><br>
+                        <div class="data">
+                            <h3>Are you sure you want to delete Jane Doe's Big 5 Asessment?</h3>
+                            <form>
+                                <input type="submit" value="Delete" class="readmore bottom">
+                                <input type="button" value="Cancel" onclick="window.location.href='client-info.html'" class="readmore bottom">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

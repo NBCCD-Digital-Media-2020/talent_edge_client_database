@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Talent Edge - Jane Doe Info</title>
+        <link href="main-style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    </head>
+    <body class="clientpage">
+        <header>
+            <img class="logo" src="logo.png">
+            <span>Talent Edge Client Database</span>
+        </header>
+        <section>
+            <div><button onclick="window.location.href='index.html'">Client List</button>
+            <button onclick="window.location.href='client-info.html'">Add a Client</button></div><br>
+            <div class="main">
+                <div class="top"><span class="clientname">Jane Doe</span><button class="clienthistory" onclick="window.location.href='client-info.html'">&lt;- Back to client page</button>
+                </div><br>
+                <div class="info">
+                    <h1>Add Coaching Plan</h1><br>
+                    <div class="data">
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>Coach</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Goal</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Outcome</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Timeframe</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Coaching Block</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td>Income</td>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="Add" class="readmore bottom">
+                            <input type="button" value="Cancel" onclick="window.location.href='client-info.html'" class="readmore bottom">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.history {
+    display: initial;
+    margin-left: 2.5rem;
+}
+.history p {
+    font-size: 1.3rem;
+    width: 37.5rem;
+    float: left;
+}
+.historyLogos {
+    float: right;
+    width: 15rem;
+    text-align: center;
+    margin: 0rem 2.5rem;
+}
+.historyLogos img {
+    display: block;
+    width: auto;
+    padding: 1rem 0rem;
+    height: 15rem;
+}
+.historyLogos span {
+    display: block;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 900;
+}
